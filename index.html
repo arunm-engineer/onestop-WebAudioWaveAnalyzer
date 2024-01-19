@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        .inputContainer {
+            height: 3rem;
+            width: 10rem;
+            border-radius: 2rem;
+            position: absolute;
+            top: 3rem;
+            left: calc((100% - 10rem) / 2);
+            background-color: #4d39d1;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        input {
+            opacity: 0;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+    </style>
+</head>
+<body>
+    <div class="inputContainer">
+        Upload Audio
+        <input type="file" accept="audio/*">
+    </div>
+    <audio></audio>
+    <canvas></canvas>
+    <script src="./script.js"></script>
+</body>
+</html>
